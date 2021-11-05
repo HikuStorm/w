@@ -5,7 +5,7 @@ metadata:
   annotations:
     # availible annotations to configure do loadbalancer: https://github.com/digitalocean/digitalocean-cloud-controller-manager/blob/master/docs/controllers/services/annotations.md
     service.beta.kubernetes.io/do-loadbalancer-protocol: 'http2'
-    service.beta.kubernetes.io/do-loadbalancer-certificate-id: #'32b667f6-1c37-4fcb-880f-0ddb2db4acb6'
+    service.beta.kubernetes.io/do-loadbalancer-certificate-id: '32b667f6-1c37-4fcb-880f-0ddb2db4acb6'
     service.beta.kubernetes.io/do-loadbalancer-redirect-http-to-https: 'true'
     service.beta.kubernetes.io/do-loadbalancer-algorithm: 'round_robin'
     service.beta.kubernetes.io/do-loadbalancer-healthcheck-protocol: 'http'
