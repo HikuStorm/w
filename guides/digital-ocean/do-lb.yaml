@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: multi-juicer-loadbalancer
+  name: monitoring-grafana
   annotations:
     # availible annotations to configure do loadbalancer: https://github.com/digitalocean/digitalocean-cloud-controller-manager/blob/master/docs/controllers/services/annotations.md
     service.beta.kubernetes.io/do-loadbalancer-protocol: 'http2'
@@ -13,8 +13,8 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app.kubernetes.io/instance: multi-juicer
-    app.kubernetes.io/name: multi-juicer
+    app.kubernetes.io/instance: monitoring-grafana
+    app.kubernetes.io/name: monitoring-grafana
   ports:
     - name: http
       protocol: TCP
